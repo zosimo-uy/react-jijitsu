@@ -1,38 +1,148 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
   display: flex;
   flex-direction: column;
+  height: 100vh;
+
+}
+
+nav{
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #ffffff;
+  padding: 30px 25px;
+  height: 60px;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
+
+nav.dark{
+  background-color: #21222A;
+  box-shadow: 0px 2px 7px rgba(255, 255, 255, 0.25);
+}
+
+.nav--logo_icon{
+  width: 40px;
+  margin: 10px;
+}
+
+.nav--logo_text{
+  color: #61DAFB;
+  margin-right: auto;
+}
+
+.nav--title {
+  color: #DEEBF8;
+}
+
+.toggler{
+  display: flex;
+  align-items: center;
+}
+
+.toggler p{
+  font-size: 0.725;
+  font-weight: 600;
+}
+
+.toggler--slider{
+  width: 25px;
+  height: 13px;
+  background-color: #2b283a;
+  border-radius: 2rem;
+  margin-inline: 7px;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid black;
+  box-sizing: content-box;
+}
+
+nav.dark .toggler--slider {
+    border-color: white;
+    background-color: #F5F5F5;
+}
+
+.toggler--slider--circle {
+    height: 13px;
+    width: 13px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+nav.dark .toggler--slider--circle {
+    background-color: black;
+}
+
+.toggler--light {
+  color: #2B283A;
+}
+
+nav.dark .toggler--light {
+  color: #918E9B;
+}
+
+.toggler--dark {
+  color: #D5D4D8;
+}
+
+nav.dark .toggler-dark {
+  color: #FFFFFF;
+}
+
+nav.dark .toggler--slider {
+  justify-content: flex-end;
+}
+
+/* MAIN Styles */
+
+main {
+  padding: 57px 27px;
+  background-image: url(./images//react-icon-light.png);
+  background-size: 180px 160px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  flex: 1 1 auto;
+  background-color: white;
+  color: #2B283A;
+}
+
+main.dark{
+  background-image: url(./images/react-icon-dark.png);
+  background-color: #222222;
+  background-size: 180px 160px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.main--title{
+  margin: 0;
+  font-size: 39px;
+  letter-spacing: -0.05em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main--facts{
+  line-height: 18px;
+  padding-block: 10px;
+}
+
+.main--facts > li {
+  line-height: 19px;
+  padding-block: 10px;
+}
+
+.main--facts > li::marker {
+  font-size: 1.4rem;
+  color: #61DAFB;
 }
