@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react-jijitsu/static/css/main.31fdc927.css",
+    "main.js": "/react-jijitsu/static/js/main.a5e6bb33.js",
+    "static/js/787.dc5dba0f.chunk.js": "/react-jijitsu/static/js/787.dc5dba0f.chunk.js",
+    "index.html": "/react-jijitsu/index.html",
+    "main.31fdc927.css.map": "/react-jijitsu/static/css/main.31fdc927.css.map",
+    "main.a5e6bb33.js.map": "/react-jijitsu/static/js/main.a5e6bb33.js.map",
+    "787.dc5dba0f.chunk.js.map": "/react-jijitsu/static/js/787.dc5dba0f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31fdc927.css",
+    "static/js/main.a5e6bb33.js"
+  ]
+}
